@@ -1,0 +1,20 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+  <title>Web App Test Environment</title>
+  <meta charset="utf-8" />
+  <script src="app-bc.service.js"></script>
+</head>
+<body>
+  <pr>
+    Install App for Basic-Card payment:&nbsp;<button id="btnRegisterAppbc" onclick="btnRegisterAppbc_onclick()">Register</button>
+  </pr>
+  <pre id="output"></pre>
+  <script>
+    function btnRegisterAppbc_onclick() {
+      var done = appbc_register();
+      document.querySelector('#output').textContent = "Registration requested";
+    }
+  </script>
+</body>
+</html>
